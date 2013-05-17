@@ -1,0 +1,37 @@
+{
+  "name": "generator-topcoat",
+  "version": "0.0.0",
+  "description": "A Topcoat generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/topcoat/generator-topcoat",
+  "bugs": "https://github.com/topcoat/generator-topcoat/issues",
+  "author": {
+    "name": "topcoat",
+    "twitter": "@an_rei",
+    "url": "https://github.com/topcoat"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/topcoat/generator-topcoat.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.10.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "Apache"
+    }
+  ]
+}
