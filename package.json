@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "A Topcoat generator for Yeoman",
   "keywords": [
+    "adobe",
+    "topcoat",
     "yeoman-generator"
   ],
   "homepage": "https://github.com/topcoat/generator-topcoat",
