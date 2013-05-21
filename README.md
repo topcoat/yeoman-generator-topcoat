@@ -5,7 +5,7 @@ A generator for Yeoman.
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
-- Install the generator **locally**: `npm install -g generator-topcoat`
+- Install the generator: `npm install -g generator-topcoat`
 - Run: `yo topcoat`
 
 ## License
