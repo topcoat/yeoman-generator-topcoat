@@ -51,7 +51,7 @@ TopcoatGenerator.prototype.askFor = function askFor() {
     }
 
     this.appName = props.appName;
-    this.theme   = (/light/i).test(props.theme) ? 'light' : 'dark';
+    this.theme   = (/light/i).test(props.theme) ? 'topcoat-mobile-light.css' : 'topcoat-mobile-dark.css';
 
     cb();
   }.bind(this));
@@ -62,15 +62,10 @@ TopcoatGenerator.prototype.app = function app() {
   var indexFile = this.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
   var packageFile = this.readFileAsString(path.join(this.sourceRoot(), '_package.json'));
 
-  if (this.theme === 'light') {
-    this.copy('css/topcoat-mobile-light.min.css', 'css/topcoat-mobile-light.min.css');
-    indexFile = indexFile.replace('css-file', 'css/topcoat-mobile-light.min.css');
-  } else {
-    this.copy('css/topcoat-mobile-dark.min.css', 'css/topcoat-mobile-dark.min.css');
-    indexFile = indexFile.replace('css-file', 'css/topcoat-mobile-dark.min.css');
-  }
+  this.bowerInstall('topcoat');
 
   indexFile = indexFile.replace(/AppName/g, this.appName);
+  indexFile = indexFile.replace(/css-file/g, this.theme);
 
   this.write('index.html', indexFile);
   this.copy('_package.json', 'package.json');

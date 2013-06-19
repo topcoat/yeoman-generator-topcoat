@@ -11,7 +11,7 @@
   "bugs": "https://github.com/topcoat/generator-topcoat/issues",
   "author": {
     "name": "topcoat",
-    "twitter": "@an_rei",
+    "twitter": "@ndreio",
     "url": "https://github.com/topcoat"
   },
   "main": "app/index.js",
